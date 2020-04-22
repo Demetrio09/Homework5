@@ -6,6 +6,7 @@ var weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 var dayOfWeek = weekDay[day];
 var todayDate = dayOfWeek + ", " + monthDayYear + ", " + localHour;
 
+$("#currentDay").append(todayDate);
 
 
 
