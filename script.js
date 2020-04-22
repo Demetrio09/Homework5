@@ -1,9 +1,10 @@
-var fullDate = new Date();
-var localHour = fullDate.toLocaleTimeString();
-var monthDayYear = fullDate.toLocaleDateString();
-var day = fullDate.getDay();
+var utcDate = new Date();
+var dayIndex = utcDate.getDay();
+var utcHour = utcDate.getHours();
+var localHour = utcDate.toLocaleTimeString();
+var monthDayYear = utcDate.toLocaleDateString();
 var weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var dayOfWeek = weekDay[day];
+var dayOfWeek = weekDay[dayIndex];
 var todayDate = dayOfWeek + ", " + monthDayYear + ", " + localHour;
 
 $("#currentDay").append(todayDate);
