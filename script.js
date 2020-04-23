@@ -21,11 +21,10 @@ for (i = 0; i <= 8; i++) {
     if (utcHour < dataValue) {
         inputEl.addClass("future");
     } else if (utcHour > dataValue) {
-        input.addClass("past");
+        inputEl.addClass("past");
     } else {
         inputEl.addClass("present");
     }
-    console.log(utcHour);
 };
 
 console.log(dataValue);
