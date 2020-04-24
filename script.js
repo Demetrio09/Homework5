@@ -6,7 +6,7 @@ var monthDayYear = utcDate.toLocaleDateString();
 var weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var dayOfWeek = weekDay[dayIndex];
 var todayDate = dayOfWeek + ", " + monthDayYear + ", " + localHour;
-var inputEl = $("input");
+var inputEl = "";//$(".description");
 var dataValue = "";
 
 // Show currently date on HTML document.
@@ -15,6 +15,7 @@ $("#currentDay").append(todayDate);
 //get data-value from input tags in order to set attributes.
 
 for (i = 0; i <= 8; i++) {
+    var inputEl = $(".description" + i);
     var dataValue = $(".description" + i).attr("data-value");
     console.log(dataValue);
 
